@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    width: 99vw;
+
+}
+
+.card{
+    height: 30rem;
+    width: 20rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-button {
+    background-color: blue;
+    height: 1.5rem;
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+#card-button a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#card-button:hover{
+    background-color: green;
+}
