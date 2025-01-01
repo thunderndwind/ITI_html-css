@@ -1,0 +1,49 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+    height: 100vh;
+    gap: 3px;
+    text-align: center;
+}
+
+.box{
+    align-content: center;
+}
+
+.header {
+    grid-area: header;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    padding: 20px;
+}
+
+.section {
+    grid-area: section;
+    padding: 20px;
+}
+
+.aside {
+    grid-area: aside;
+    padding: 20px;
+}
+
+.article {
+    grid-area: article;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 20px;
+}

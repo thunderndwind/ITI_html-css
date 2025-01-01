@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>FeedBack</title>
+    </head>
+    <body>
+        <header>
+            <h1>Feedback Form</h1>
+        </header>
+
+        <main>
+            <section>
+                <form class="feedback-form">
+                    <fieldset class="feedback-fieldset">
+                        <legend>Feedback</legend>
+
+                        <label for="user_name" style="display: block;">
+                            User Name:
+                            <input type="text" name="Username"
+                                placeholder="User Name"
+                                id="user_name">
+
+                        </label>
+                        <br>
+
+                        <label for="feedback">Feedback:</label>
+                        <textarea name="feedback" id="feedback"
+                            placeholder="Write your feedback Here"
+                            required></textarea>
+                        <br>
+                        <br>
+
+                        <p style="display: inline;">rate session: </p>
+                        <input type="range" name="rating" id="rating"
+                            placeholder="rating" min="0" max="5">
+
+                        <br>
+                        <br>
+
+                        <input type="submit" value="Submit"
+                            id="form-submit-button">
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            Terms and Condition
+        </footer>
+    </body>
+</html>

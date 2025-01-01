@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>Investigate Form</legend>
+                <input type="text" name="Username" placeholder="User Name"
+                    style="display: block;">
+                <br>
+
+                <input type="email" name="email" placeholder="User email"
+                    style="display: block;">
+                <br>
+
+                <input type="password" name="password" id="password"
+                    style="display: block;" placeholder="User Password">
+                <br>
+
+                <input type="password" name="confirm_password"
+                    id="confirm_password" style="display: block;"
+                    placeholder="Confirm Password">
+
+                <p>Please select your gender:</p>
+                <input type="radio" name="gender" id="male_gender" checked>
+                <label for="male_gender">Male</label>
+                <input type="radio" name="gender" id="female_gender"> <label
+                    for="female_gender"> Female</label>
+
+                <p>Please select your date of birth:</p>
+
+                <input type="date" name="date_of_birth" id="dob">
+
+                <p>Do you like this lab: </p>
+                <input type="radio" name="lab_survey" id="positive" checked>
+                <label for="positive">Yes</label>
+                <input type="radio" name="lab_survey" id="negative"> <label
+                    for="negative">No</label>
+
+                <br>
+                <p style="display: inline;">rate session: </p>
+                <input type="range" name="rating" id="rating"
+                    placeholder="rating" min="0" max="5">
+
+                <br>
+                <p style="display: inline;">select favorite color: </p>
+                <input type="color" name="color" id="color" placeholder="color">
+
+                <br>
+                <p style="display: inline;">give us feedback: </p>
+                <br>
+                <textarea name="feedback" id="feedback"
+                    minlength="12"></textarea>
+
+                <p>upload resume: </p>
+                <input type="file" name="resume" id="resume">
+
+                <p>select favorite language: </p>
+                <input type="checkbox" name="fav_lang" id="python"> <label
+                    for="fav_lang">python</label>
+                <br>
+                <input type="checkbox" name="fav_lang" id="java"> <label
+                    for="fav_lang">java</label>
+                <br>
+
+                <input type="checkbox" name="fav_lang" id="cpp"> <label
+                    for="fav_lang">cpp</label>
+                <br>
+
+                <input type="checkbox" name="fav_lang" id="javascript"> <label
+                    for="fav_lang">javascript</label>
+
+                <input type="hidden" name="secret" value="0123456">
+                <br>
+
+                <input type="submit" value="sumbit" placeholder="sumbit">
+
+            </fieldset>
+        </form>
+    </body>
+</html>

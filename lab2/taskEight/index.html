@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accessible</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form class="feedback-form">
+            <fieldset class="feedback-fieldset">
+                <legend>Feedback</legend>
+
+                <div class="form-element">
+
+                    <label for="user_name" style="display: block;">
+                        User Name:
+                        <input type="text" name="Username"
+                            placeholder="User Name"
+                            id="user_name" required>
+
+                    </label>
+                    <br>
+                </div>
+
+                <div class="form-element">
+
+                    <label for="feedback">
+                        Feedback:
+                        <textarea name="feedback" id="feedback"
+                            placeholder="Write your feedback Here"
+                            required></textarea>
+
+                    </label>
+                    <br>
+
+                </div>
+
+                <div class="form-element">
+
+                    <p style="display: inline;">rate session: </p>
+                    <input type="range" name="rating" id="rating"
+                        placeholder="rating" min="0" max="5" step="1">
+
+                    <br>
+
+                </div>
+                <br>
+
+                <input type="submit" value="Submit"
+                    id="form-submit-button">
+            </fieldset>
+        </form>
+
+    </body>
+</html>

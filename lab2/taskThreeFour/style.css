@@ -1,0 +1,14 @@
+.resgisteration-form{
+    text-align: center;
+    padding: 3em;
+    margin: 12rem;
+    border: 1px solid green;
+    border-radius: 12px;
+    width: 65%;
+    
+}
+
+.resgisteration-form fieldset{
+    padding: 3em;
+    background-color: rgb(65, 231, 65);
+}
