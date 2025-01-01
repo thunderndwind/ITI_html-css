@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form class="registration-form">
+            <fieldset>
+                <legend>Registration</legend>
+
+                <label for="user_name" style="display: block;">
+                    User Name:
+                    <input type="text" name="name" placeholder="Enter your name"
+                        id="user_name" required>
+                </label>
+                <br>
+
+                <label for="user_email" style="display: block;">
+                    User Email:
+                    <input type="email" name="email"
+                        placeholder="Enter your email" id="user_email" required>
+                </label>
+                <br>
+
+                <label for="programming_language" style="display: block;">
+                    Favorite Programming Language:
+                    <select name="programming_language"
+                        id="programming_language" required>
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="java">Java</option>
+                    </select>
+                </label>
+                <br>
+
+                <label for="skill_level" style="display: block;">
+                    Skill Level:
+                    <br>
+                    <input type="radio" name="skill_level" value="beginner"
+                        id="beginner" required>
+                    <label for="beginner">Beginner</label><br>
+
+                    <input type="radio" name="skill_level" value="intermediate"
+                        id="intermediate" required>
+                    <label for="intermediate">Intermediate</label><br>
+
+                    <input type="radio" name="skill_level" value="advanced"
+                        id="advanced" required>
+                    <label for="advanced">Advanced</label><br>
+                </label>
+                <br>
+
+                <input type="submit" value="Submit" id="form-submit-button">
+            </fieldset>
+        </form>
+    </body>
+</html>
